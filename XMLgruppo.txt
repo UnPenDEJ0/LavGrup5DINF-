@@ -1,0 +1,125 @@
+<PIATTAFORMASTREAMING>
+ <InfoPiattaforma>
+  <NomePiattaforma>La Nostra Piattaforma di Streaming</NomePiattaforma>
+  <Descrizione> Una piattaforma per lo streaming live</Descrizione>
+  <Gruppo> Gaggioli Cannilla Bertani</Gruppo>
+ </InfoPiattaforma>
+ 
+ <Server>
+  <IndirizzoUrl>http://ilNostroStreaming.com</IndirizzoUrl>
+  <CapienzaDiUtenzi>50000</CapienzaDiUtenzi>
+  <SicurezzaDatiPrivacy> <!-- i sistemi che si occupano di tenere al sicuro i dati -->
+   <Crittografia>software proprietario</Crittografia> <!-- mi immagino che un azzianda come twich abbia un suo software proprietario che fa cio -->
+   <Autenticazione>
+    <CredenzialiPass> pasword </CredenzialiPass>
+    <CredenzialiMail> E-Mail </CredenzialiMail>
+    <CredenzialiUserName> UserName </CredenzialiUserName>
+   </Autenticazione>
+  </SicurezzaDatiPrivacy>
+ </Server>
+
+  <!--data la possibilita di ricercare gli utenti che hanno un canale creo un catalogo di canali -->
+ <CatalogoCanali>
+  <Canale>
+   <Nome>Canale1</Nome>
+   <Proprietario>Utente Registrato</Proprietario>
+   <Categoria>Gaming</Categoria>
+   <TipoDiGioco>LOL</TipoDiGioco><!-- (non sono sicuro si possa fare) metto opzionale il campo semplicemente per specificare il gioco-->
+   <NumeroDonazioni>100 a live</NumeroDonazioni>
+  </Canale>
+
+  <Canale>
+   <Nome>Canale2</Nome>
+   <Proprietario>Utente Registrato2</Proprietario>
+   <Categoria>Just Chatting</Categoria>
+   <NumeroDonazioni>300 a live</NumeroDonazioni>
+  </Canale>
+ </CatalogoCanali>
+
+ <RegistroUtenti>
+  <Utente>
+   <Username>Utente1</Username>
+   <Email>utente1@email.com</Email>
+   <CanaliSeguiti>
+    <Canale>Canale1</Canale>
+    <TipoAbbonamento>Gratis</TipoAbbonamento>
+    <DurataAbbonamento>//</DurataAbbonamento>
+    
+    <Canale>Canale2</Canale>
+    <TipoAbbonamento>Premium</TipoAbbonamento>
+    <DurataAbbonamento>5 mesi</DurataAbbonamento>
+   </CanaliSeguiti>
+  </Utente>
+
+  <Utente>
+   <Username>Utente2</Username>
+   <Email>utente2@email.com</Email>
+   <CanaliSeguiti>
+    <Canale>Canale2</Canale>
+    <TipoAbbonamento>Premium</TipoAbbonamento>
+    <DurataAbbonamento>3 settimane</DurataAbbonamento>
+
+    <Canale>Canale4</Canale>
+    <TipoAbbonamento>Gratis</TipoAbbonamento>
+    <DurataAbbonamento>//</DurataAbbonamento>
+   </CanaliSeguiti>
+  </Utente>
+ </RegistroUtenti>
+
+ <RegistroAmministratori>
+  <Amministratore>
+   <User>Amm1</Uesr>
+   <Mail>Amm1@email.com</Mail>
+   <Pass>pasword</Pass>
+   <Permessi> <!-- metto 0 1 a seconda se hanno o no il permesso-->
+    <Ban>1</Ban>
+    <Supervisione>1</Supervisione>
+    <Aggiornamenti>0</Aggiornamenti>
+   </Permessi>
+  </Amministratore>
+
+  <Amministratore>
+   <User>Amm2</Uesr>
+   <Mail>Amm2@email.com</Mail>
+   <Pass>123</Pass>
+   <Permessi> 
+    <Ban>0</Ban>
+    <Supervisione>1</Supervisione>
+    <Aggiornamenti>1</Aggiornamenti>
+   </Permessi>
+  </Amministratore>
+ </RegistroAmministratori>
+
+ <RegistroSponsor>
+  <Sponsor>
+   <NomeSponsor>Sponsor1</NomeSponsor>
+   <CatalogoVideo>
+    <Video>
+     <NomeVideo>Video1</NomeVideo>
+     <DurtaVideo>2min</DurataVideo>
+    </Video>
+    <Video>
+     <NomeVideo>Video2</NomeVideo>
+     <DurtaVideo>1min 20 sec</DurataVideo>
+    </Video>
+   </CatalogoVideo>
+   <Paga>1$ ogni 3 minuti di pubblicita </Paga>
+  </Sponsor>
+
+  <Sponsor>
+   <NomeSponsor>Sponsor2</NomeSponsor>
+   <CatalogoVideo>
+    <Video>
+     <NomeVideo>Video1</NomeVideo>
+     <DurtaVideo>1min</DurataVideo>
+    </Video>
+    <Video>
+     <NomeVideo>Video2</NomeVideo>
+     <DurtaVideo>45 sec</DurataVideo>
+    </Video>
+   </CatalogoVideo>
+   <Paga>1,50$ ogni 2 minuti di pubblicita </Paga>
+  </Sponsor>
+ </RegistroSponsor>
+
+</PIATTAFORMASTREAMING>
